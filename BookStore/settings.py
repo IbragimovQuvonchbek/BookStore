@@ -57,10 +57,9 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ALLOWED_ORIGINS = [
-    'http://localhost:3000',
-    'http://ec2-13-60-104-98.eu-north-1.compute.amazonaws.com',
-]
+CORS_ALLOW_ALL_ORIGINS = True
+
+APPEND_SLASH = False
 
 ROOT_URLCONF = 'BookStore.urls'
 
